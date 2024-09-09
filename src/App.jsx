@@ -17,7 +17,7 @@ export default function App() {
           />
         </section>
       </section>
-      <Picker />
+      <Picker onClick={() => console.log("salope")} />
     </main>
   );
 }
