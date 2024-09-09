@@ -1,12 +1,13 @@
 import "./App.css";
 import Header from "./components/Header/Header";
+import Picker from "./components/Picker/Picker";
 import Title from "./components/Title/Title";
 
 export default function App() {
   return (
-    <main className="w-full py-5 px-40 font-recoleta">
+    <main className="w-full font-recoleta">
       <Header />
-      <section className="size-full mt-16 flex items-center">
+      <section className="py-5 px-40 size-full mt-16 flex items-center">
         <Title />
         <section className="w-1/2 flex items-center justify-center">
           <img
@@ -16,6 +17,7 @@ export default function App() {
           />
         </section>
       </section>
+      <Picker />
     </main>
   );
 }

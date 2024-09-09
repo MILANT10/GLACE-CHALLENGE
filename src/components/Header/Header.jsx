@@ -2,7 +2,7 @@ export default function Header() {
   const LINKS = ["About", "Products", "Moods", "Flavors", "Ingredients"];
 
   return (
-    <header className="w-full h-20 text-white border-b border-gray-300 border-opacity-30 box-content pb-4">
+    <header className="py-5 px-40 w-full h-20 text-white border-b border-gray-300 border-opacity-30">
       <nav className="size-full flex justify-between items-center">
         <h1 className="font-recoleta text-3xl">Creamy</h1>
         <ul className="flex justify-center gap-12 font-sans font-medium">
