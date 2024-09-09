@@ -6,13 +6,11 @@ export default {
       colors: {
         darkBrown: "#361a0c",
         honey: "#f5bf07",
+        black: "#140200",
       },
       fontFamily: {
         recoleta: ["Recoleta"],
       },
-    },
-    colors: {
-      black: "#140200",
     },
   },
   plugins: [],

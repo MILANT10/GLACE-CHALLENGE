@@ -1,7 +1,10 @@
 import "./App.css";
+import Header from "./components/Header/Header";
 
-function App() {
-  return <div> About</div>;
+export default function App() {
+  return (
+    <main className="size-full bg-darkBrown py-5 px-40 font-recoleta">
+      <Header />
+    </main>
+  );
 }
-
-export default App;
