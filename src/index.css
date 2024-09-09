@@ -36,3 +36,54 @@
     z-index: -1;
   }
 }
+
+.circle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  top: 5px;
+}
+
+.circle :nth-child(1) {
+  position: relative;
+  transform: rotate(-12deg);
+  top: 50px;
+}
+
+.circle :nth-child(2) {
+  position: relative;
+  transform: rotate(-6deg);
+  top: 20px;
+}
+
+.circle :nth-child(3) {
+  position: relative;
+  transform: rotate(-2deg);
+  top: 5px;
+}
+
+.circle :nth-child(4) {
+  position: relative;
+  transform: rotate(0deg);
+  top: 0px;
+}
+
+.circle :nth-child(5) {
+  position: relative;
+  transform: rotate(2deg);
+  top: 5px;
+}
+
+.circle :nth-child(6) {
+  position: relative;
+  transform: rotate(6deg);
+  top: 20px;
+}
+
+.circle :nth-child(7) {
+  position: relative;
+  transform: rotate(12deg);
+  top: 50px;
+}
