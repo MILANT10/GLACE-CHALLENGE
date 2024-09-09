@@ -1,14 +1,19 @@
 export default function Header() {
+  const LINKS = ["About", "Products", "Moods", "Flavors", "Ingredients"];
+
   return (
-    <header className="w-full h-20 text-white border-b border-gray-300 border-opacity-30">
+    <header className="w-full h-20 text-white border-b border-gray-300 border-opacity-30 box-content pb-6">
       <nav className="size-full flex justify-between items-center">
         <h1 className="font-recoleta text-3xl">Creamy</h1>
         <ul className="flex justify-center gap-12 font-sans font-medium">
-          <li>About</li>
-          <li>Products</li>
-          <li>Moods</li>
-          <li>Flavors</li>
-          <li>Ingredients</li>
+          {LINKS.map((link, index) => (
+            <li
+              className="hover:cursor-pointer hover:scale-125 transition-all duration-300 ease-in-out"
+              key={index}
+            >
+              {link}
+            </li>
+          ))}
         </ul>
         <div className="flex justify-center items-center gap-8">
           <img
