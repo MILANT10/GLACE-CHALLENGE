@@ -8,3 +8,26 @@
     src: url(/src/assets/fonts/Recoleta-Bold.ttf);
   }
 }
+
+.ovale {
+  width: 300px;
+  height: 90px;
+  -webkit-border-radius: 160px / 100px;
+  -moz-border-radius: 160px / 100px;
+  border-radius: 150px / 45px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 90px;
+    -webkit-border-radius: 160px / 100px;
+    -moz-border-radius: 160px / 100px;
+    border-radius: 150px / 45px;
+    background: #fff;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+  }
+}
