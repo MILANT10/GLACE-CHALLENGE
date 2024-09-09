@@ -10,7 +10,7 @@ export default function App() {
         <Title />
         <section className="w-1/2 flex items-center justify-center">
           <img
-            className="size-[34rem] object-contain"
+            className="size-[36rem] object-contain"
             src="/ice-cream.webp"
             alt="ice-cream photo"
           />

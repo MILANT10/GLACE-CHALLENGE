@@ -39,3 +39,9 @@ Galette au sucre
 Tarte à la praline (69 rpz)
 Le saucisson brioché (69 rpz)
 Olympique lyonnais (c'est pas un gout mais bleu et rouge sur une glace c'est top visuellement)
+
+
+Peut être faire un carousel pour les glaces ? 
+J'ai une idée ou le pot serait une image fixe mais les boules changent avec la sélection 
+
+A chaque choix elle dispaitrait dans le pot pour réaparaitre avec le gout choisis
