@@ -7,6 +7,7 @@ export default {
         darkBrown: "#361a0c",
         honey: "#f5bf07",
         black: "#140200",
+        pink: "#ff2293",
       },
       fontFamily: {
         recoleta: ["Recoleta"],

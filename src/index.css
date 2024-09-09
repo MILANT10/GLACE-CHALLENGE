@@ -40,22 +40,23 @@
 .circle {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   position: absolute;
   top: 5px;
+  padding: 0 10rem;
 }
 
 .circle :nth-child(1) {
   position: relative;
-  transform: rotate(-12deg);
-  top: 50px;
+  transform: rotate(-14deg);
+  top: 65px;
 }
 
 .circle :nth-child(2) {
   position: relative;
   transform: rotate(-6deg);
-  top: 20px;
+  top: 25px;
 }
 
 .circle :nth-child(3) {
@@ -79,11 +80,15 @@
 .circle :nth-child(6) {
   position: relative;
   transform: rotate(6deg);
-  top: 20px;
+  top: 25px;
 }
 
 .circle :nth-child(7) {
   position: relative;
-  transform: rotate(12deg);
-  top: 50px;
+  transform: rotate(14deg);
+  top: 66px;
+}
+
+.innerShaddow {
+  box-shadow: inset 0 0 0 5px #fff;
 }
