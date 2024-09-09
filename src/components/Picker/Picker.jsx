@@ -19,7 +19,7 @@ export default function Picker({ onClick }) {
             onClick={() => onClick(button.title)}
             key={index}
             className={
-              "bg-blue-100 text-black border border-black px-4 py-2 rounded-full " +
+              "bg-blue-100 text-black border border-black px-4 py-2 rounded-full hover:scale-110 transition-all duration-300 ease-in-out hover:saturate-200 " +
               button.color
             }
           >
