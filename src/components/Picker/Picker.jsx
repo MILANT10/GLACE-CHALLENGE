@@ -2,13 +2,13 @@ import Footer from "../Footer/Footer";
 
 export default function Picker({ onClick }) {
   const BUTTONS = [
-    { title: "Chocolate gelato", color: "bg-amber-100" },
-    { title: "Strawberry gelato", color: "bg-red-100" },
-    { title: "Mint gelato", color: "bg-green-100" },
-    { title: "Vanilla gelato", color: "bg-blue-100" },
-    { title: "Pistachio gelato", color: "bg-green-400" },
-    { title: "Lemon gelato", color: "bg-yellow-100" },
-    { title: "Coffee gelato", color: "bg-amber-400" },
+    { title: "Cuisse grenouille", color: "bg-[#e3f6be]" },
+    { title: "Tarte au sucre", color: "bg-[#ebfaff]" },
+    { title: "Fondue savoyarde", color: "bg-[#e8e8e8]" },
+    { title: "Bugnes", color: "bg-[#ebfff4]" },
+    { title: "Tarte praline", color: "bg-[#fce5dd]" },
+    { title: "Saucisson brioché", color: "bg-[#f7f7d1]" },
+    { title: "Olympique lyonnais", color: "bg-[#fdfdf3]" },
   ];
 
   return (
