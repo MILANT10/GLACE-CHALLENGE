@@ -4,15 +4,15 @@ export default function Footer() {
       <aside className="flex flex-col gap-6">
         <h3 className="text-4xl font-bold">Everyone Can be cremos</h3>
         <p className="text-xl">Get the scoops</p>
-        <button className="flex justify-between items-center h-12 w-64 bg-white rounded-full border border-black after:content-['>'] after:rounded-full after:w-14 after:h-full after:bg-pink after:flex after:items-center after:justify-center after:text-white">
-          <a
-            className="m-4 size-fit"
-            target="_blank"
-            href="https://youtu.be/dQw4w9WgXcQ?si=33kz_IHpNK_-zhYu"
-          >
+        <a
+          className="size-fit"
+          target="_blank"
+          href="https://youtu.be/dQw4w9WgXcQ?si=33kz_IHpNK_-zhYu"
+        >
+          <button className="pl-4 flex justify-between items-center h-12 w-64 bg-white rounded-full border border-black after:content-['>'] after:rounded-full after:w-14 after:h-full after:bg-pink after:flex after:items-center after:justify-center after:text-white">
             Watch our story
-          </a>
-        </button>
+          </button>
+        </a>
       </aside>
 
       <aside className="bg-darkBrown rounded-t-full w-fit h-full flex justify-center items-center p-2 translate-y-12">
