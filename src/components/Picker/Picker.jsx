@@ -1,4 +1,5 @@
 import Footer from "../Footer/Footer";
+import { motion } from "framer-motion";
 
 export default function Picker({ onClick }) {
   const BUTTONS = [
@@ -19,22 +20,46 @@ export default function Picker({ onClick }) {
     { title: "Olympique lyonnais", color: "bg-[#fdfdf3]", src: "/ol.jpg" },
   ];
 
+  const list = {
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 1,
+        staggerChildren: 0.2,
+      },
+    },
+    hidden: {
+      opacity: 0,
+    },
+  };
+
+  const listItem = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
+
   return (
     <section className="w-full overflow-x-hidden pt-6 relative">
-      <section className="circle">
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={list}
+        className="circle"
+      >
         {BUTTONS.map((button, index) => (
-          <button
+          <motion.button
             onClick={() => onClick(button.src)}
             key={index}
+            variants={listItem}
             className={
               "text-black border border-black px-4 py-2 rounded-full hover:scale-110 transition-all duration-300 ease-in-out hover:saturate-200 " +
               button.color
             }
           >
             {button.title}
-          </button>
+          </motion.button>
         ))}
-      </section>
+      </motion.section>
       <img
         className="w-full bg-darkBrown scale-11O"
         src="/rounded.svg"
