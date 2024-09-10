@@ -21,6 +21,7 @@ Voicis quelques infos pour toi !
 - J'ai utilisé le framework CSS TailwindCSS
 - J'ai utilise framer motion pour les animations
 - Images générées par IA
+- Projet réalisé en 7 8h environ
 
 Par manque de temps je n'ai pas fait le responsive design. Je te conseille vivement de regarder le projet sur un grand écran.
 J'ai essayé au mieux de représenter ma région, l'auvergne-rhône-alpes, à travers ce challenge.
