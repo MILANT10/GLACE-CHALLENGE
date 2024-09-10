@@ -25,10 +25,25 @@ export default function Footer() {
 
       <aside className="w-1/3">
         <p className="text-3xl leading-relaxed text-balance">
-          Everyone loves ice cream but nobody screams with joy at the cost of
+          Everyone loves <ChildImage src="/child.webp" color="bg-purple-500" />
+          ice cream but nobody screams with joy at the cost of
+          <ChildImage src="/child.webp" color="bg-blue-500" />
           complexity.
         </p>
       </aside>
     </footer>
   );
 }
+
+const ChildImage = ({ src, color }) => {
+  return (
+    <div className="relative w-16 h-16 inline-block mx-2">
+      <img
+        className="w-full h-full rounded-full object-cover relative z-10"
+        src={src}
+        alt="photo de ice cream lol"
+      />
+      <span className={"absolute bottom-0 rounded-full w-16 h-6 " + color} />
+    </div>
+  );
+};

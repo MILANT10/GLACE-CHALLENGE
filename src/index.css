@@ -112,3 +112,8 @@
 *::-webkit-scrollbar-thumb:active {
   background-color: #f5bf07;
 }
+
+.shadow2 {
+  -webkit-box-shadow: 0px 0px 0px 10px #ff2ff8;
+  box-shadow: 0px 0px 0px 10px #ff2ff8;
+}
