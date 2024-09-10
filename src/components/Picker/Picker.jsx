@@ -2,13 +2,21 @@ import Footer from "../Footer/Footer";
 
 export default function Picker({ onClick }) {
   const BUTTONS = [
-    { title: "Cuisse grenouille", color: "bg-[#e3f6be]" },
-    { title: "Tarte au sucre", color: "bg-[#ebfaff]" },
-    { title: "Fondue savoyarde", color: "bg-[#e8e8e8]" },
-    { title: "Bugnes", color: "bg-[#ebfff4]" },
-    { title: "Tarte praline", color: "bg-[#fce5dd]" },
-    { title: "Saucisson brioché", color: "bg-[#f7f7d1]" },
-    { title: "Olympique lyonnais", color: "bg-[#fdfdf3]" },
+    {
+      title: "Cuisse grenouille",
+      color: "bg-[#e3f6be]",
+      src: "/grenouille.jpg ",
+    },
+    { title: "Tarte au sucre", color: "bg-[#ebfaff]", src: "/sucres.jpg" },
+    { title: "Fondue savoyarde", color: "bg-[#e8e8e8]", src: "/fondue.webp" },
+    { title: "Bugnes", color: "bg-[#ebfff4]", src: "/bugnes.jpg" },
+    { title: "Tarte praline", color: "bg-[#fce5dd]", src: "/praline.jpg" },
+    {
+      title: "Saucisson brioché",
+      color: "bg-[#f7f7d1]",
+      src: "/saucisson.jpg",
+    },
+    { title: "Olympique lyonnais", color: "bg-[#fdfdf3]", src: "/ol.jpg" },
   ];
 
   return (
@@ -16,10 +24,10 @@ export default function Picker({ onClick }) {
       <section className="circle">
         {BUTTONS.map((button, index) => (
           <button
-            onClick={() => onClick(button.title)}
+            onClick={() => onClick(button.src)}
             key={index}
             className={
-              "bg-blue-100 text-black border border-black px-4 py-2 rounded-full hover:scale-110 transition-all duration-300 ease-in-out hover:saturate-200 " +
+              "text-black border border-black px-4 py-2 rounded-full hover:scale-110 transition-all duration-300 ease-in-out hover:saturate-200 " +
               button.color
             }
           >
