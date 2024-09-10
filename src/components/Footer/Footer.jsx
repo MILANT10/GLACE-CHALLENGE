@@ -18,7 +18,7 @@ export default function Footer() {
       <aside className="bg-darkBrown rounded-t-full w-fit h-full flex justify-center items-center p-2 translate-y-12">
         <img
           className="w-64 object-contain p-6 border border-white rounded-t-full "
-          src="/ice-cream.webp"
+          src="/10012.png"
           alt="photo de ice cream lol"
         />
       </aside>

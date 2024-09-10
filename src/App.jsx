@@ -24,11 +24,11 @@ export default function App() {
   };
 
   return (
-    <main className="w-full font-recoleta">
+    <main className="w-full font-recoleta overflow-hidden">
       <Header />
-      <section className="py-5 px-40 size-full mt-16 flex items-center">
+      <section className="py-5 px-40 size-full mt-16 flex items-center overflow-hidden relative">
         <Title />
-        <section className="w-1/2 flex items-center justify-center relative">
+        <section className="w-1/2 flex items-center justify-center relative overflow-hidden">
           <motion.img
             key={key}
             initial={iceCreamAnimation.initial}
@@ -38,12 +38,15 @@ export default function App() {
             src={iceCream}
             alt="ice-cream photo"
           />
-          <img
-            className="size-[30rem] object-contain absolute -bottom-28 left-[15%]"
-            src="/10008.svg"
-            alt="ice-cream photo"
-          />
         </section>
+        <motion.img
+          initial={{ opacity: 0, rotate: 10, x: "100%" }}
+          animate={{ opacity: 1, rotate: -10, x: "20%" }}
+          transition={{ duration: 0.5, delay: 2.8 }}
+          className="size-[20rem] object-contain absolute right-0"
+          src="/10001.png"
+          alt="ice-cream photo"
+        />
       </section>
       <Picker onClick={changeIceCream} />
     </main>
